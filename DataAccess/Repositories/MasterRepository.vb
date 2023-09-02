@@ -1,23 +1,23 @@
 ﻿Imports System.Data
-Imports System.Data.SqlClient
+Imports MySql.Data.MySqlClient
 Public MustInherit Class MasterRepository
 
     Inherits Repository
 
-    Protected parameters As List(Of SqlParameter)
+    Protected parameters As List(Of MySqlParameter)
     Protected Function ExecuteNonQuery(transactSql As String) As Integer
 
         Using connection = GetConnection()
 
             connection.Open()
 
-            Using command = New SqlCommand()
+            Using command = New MySqlCommand()
 
                 command.Connection = connection
                 command.CommandText = transactSql
                 command.CommandType = CommandType.Text
 
-                For Each item As SqlParameter In parameters
+                For Each item As MySqlParameter In parameters
                     command.Parameters.Add(item)
                 Next
 
@@ -39,7 +39,7 @@ Public MustInherit Class MasterRepository
 
             connection.Open()
 
-            Using command = New SqlCommand()
+            Using command = New MySqlCommand()
 
                 command.Connection = connection
                 command.CommandText = transactSql

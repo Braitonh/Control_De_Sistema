@@ -1,5 +1,5 @@
 ﻿Imports System.Data
-Imports System.Data.SqlClient
+Imports MySql.Data.MySqlClient
 
 Public MustInherit Class Repository
 
@@ -9,9 +9,9 @@ Public MustInherit Class Repository
         connectionString = "server=localhost; user=root; password=root; database=mycompany;"
     End Sub
 
-    Protected Function GetConnection() As SqlConnection
+    Protected Function GetConnection() As MySqlConnection
 
-        Return New SqlConnection(connectionString)
+        Return New MySqlConnection(connectionString)
 
     End Function
 

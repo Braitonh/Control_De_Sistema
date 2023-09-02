@@ -12,3 +12,5 @@ C:\Users\Usuario\Desktop\Proyecto Final Combate Mborore\Proyecto Control De Sist
 C:\Users\Usuario\Desktop\Proyecto Final Combate Mborore\Proyecto Control De Sistema\Domain\obj\Debug\Domain.dll
 C:\Users\Usuario\Desktop\Proyecto Final Combate Mborore\Proyecto Control De Sistema\Domain\obj\Debug\Domain.xml
 C:\Users\Usuario\Desktop\Proyecto Final Combate Mborore\Proyecto Control De Sistema\Domain\obj\Debug\Domain.pdb
+C:\Users\Usuario\Desktop\Proyecto Final Combate Mborore\Proyecto Control De Sistema\Domain\bin\Debug\MySql.Data.dll
+C:\Users\Usuario\Desktop\Proyecto Final Combate Mborore\Proyecto Control De Sistema\Domain\bin\Debug\MySql.Data.xml

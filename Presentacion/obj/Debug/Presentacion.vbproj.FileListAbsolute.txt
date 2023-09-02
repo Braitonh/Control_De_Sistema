@@ -17,3 +17,5 @@ C:\Users\Usuario\Desktop\Proyecto Final Combate Mborore\Proyecto Control De Sist
 C:\Users\Usuario\Desktop\Proyecto Final Combate Mborore\Proyecto Control De Sistema\Presentacion\obj\Debug\Presentacion.exe
 C:\Users\Usuario\Desktop\Proyecto Final Combate Mborore\Proyecto Control De Sistema\Presentacion\obj\Debug\Presentacion.xml
 C:\Users\Usuario\Desktop\Proyecto Final Combate Mborore\Proyecto Control De Sistema\Presentacion\obj\Debug\Presentacion.pdb
+C:\Users\Usuario\Desktop\Proyecto Final Combate Mborore\Proyecto Control De Sistema\Presentacion\bin\Debug\MySql.Data.dll
+C:\Users\Usuario\Desktop\Proyecto Final Combate Mborore\Proyecto Control De Sistema\Presentacion\bin\Debug\MySql.Data.xml

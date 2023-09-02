@@ -1,6 +1,5 @@
 ﻿Imports System.Data
-Imports System.Data.SqlClient
-
+Imports MySql.Data.MySqlClient
 Public Class EmployeeRepositorie
     Inherits MasterRepository
     Implements IEmployeeRepository
@@ -37,30 +36,30 @@ Public Class EmployeeRepositorie
     End Function
 
     Public Function Add(entity As Employee) As Integer Implements IGenericRepository(Of Employee).Add
-        parameters = New List(Of SqlParameter)
-        parameters.Add(New SqlParameter("@idNumber", entity.IdNumber))
-        parameters.Add(New SqlParameter("@name", entity.Name))
-        parameters.Add(New SqlParameter("@mail", entity.Mail))
-        parameters.Add(New SqlParameter("@birthday", entity.Birthday))
+        parameters = New List(Of MySqlParameter)
+        parameters.Add(New MySqlParameter("@idNumber", entity.IdNumber))
+        parameters.Add(New MySqlParameter("@name", entity.Name))
+        parameters.Add(New MySqlParameter("@mail", entity.Mail))
+        parameters.Add(New MySqlParameter("@birthday", entity.Birthday))
 
         Return ExecuteNonQuery(insert)
 
     End Function
 
     Public Function Edit(entity As Employee) As Integer Implements IGenericRepository(Of Employee).Edit
-        parameters = New List(Of SqlParameter)
-        parameters.Add(New SqlParameter("@IdPK", entity.IdPk))
-        parameters.Add(New SqlParameter("@idNumber", entity.IdNumber))
-        parameters.Add(New SqlParameter("@name", entity.Name))
-        parameters.Add(New SqlParameter("@mail", entity.Mail))
-        parameters.Add(New SqlParameter("@birthday", entity.Birthday))
+        parameters = New List(Of MySqlParameter)
+        parameters.Add(New MySqlParameter("@IdPK", entity.IdPk))
+        parameters.Add(New MySqlParameter("@idNumber", entity.IdNumber))
+        parameters.Add(New MySqlParameter("@name", entity.Name))
+        parameters.Add(New MySqlParameter("@mail", entity.Mail))
+        parameters.Add(New MySqlParameter("@birthday", entity.Birthday))
 
         Return ExecuteNonQuery(update)
     End Function
 
     Public Function Remove(id As Integer) As Integer Implements IGenericRepository(Of Employee).Remove
-        parameters = New List(Of SqlParameter)
-        parameters.Add(New SqlParameter("@idNumber", id))
+        parameters = New List(Of MySqlParameter)
+        parameters.Add(New MySqlParameter("@idNumber", id))
 
 
         Return ExecuteNonQuery(delete)
